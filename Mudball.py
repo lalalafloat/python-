@@ -68,13 +68,13 @@ def get_user_input(name):
     try:
         psi = float(input(name + " charge the gun with how many psi? "))
     except ValueError:
-        logger.info("accepted wrong type import")
+        logger.error("accepted wrong type import")
         print("please enter a number!!")
         psi = float(input(name + " charge the gun with how many psi? "))
     try:
         angle = float(input(name + " move the gun at what angle? "))
     except ValueError:
-        logger.info("accepted wrong type import")
+        logger.error("accepted wrong type import")
         print("please enter a number!!")
         angle = float(input(name + " move the gun at what angle? "))
     return psi, angle
